@@ -1,0 +1,633 @@
+digraph "Decision Tree" {
+	node [shape=rectangle]
+	"ID 1
+Glucose <= 127.5
+" -> "ID 2
+Age <= 29.5
+" [label=True]
+	"ID 1
+Glucose <= 127.5
+" -> "ID 77
+Glucose <= 166.5
+" [label=False]
+	"ID 2
+Age <= 29.5
+" -> "ID 3
+BMI <= 31.25
+" [label=True]
+	"ID 2
+Age <= 29.5
+" -> "ID 34
+BMI <= 26.95
+" [label=False]
+	"ID 77
+Glucose <= 166.5
+" -> "ID 78
+BMI <= 30.15
+" [label=True]
+	"ID 77
+Glucose <= 166.5
+" -> "ID 121
+Age <= 66.5
+" [label=False]
+	"ID 3
+BMI <= 31.25
+" -> "ID 4
+DiabetesPedigreeFunction <= 0.672
+" [label=True]
+	"ID 3
+BMI <= 31.25
+" -> "ID 9
+DiabetesPedigreeFunction <= 0.9555
+" [label=False]
+	"ID 34
+BMI <= 26.95
+" -> "ID 35
+BMI <= 9.65
+" [label=True]
+	"ID 34
+BMI <= 26.95
+" -> "ID 38
+Glucose <= 103.5
+" [label=False]
+	"ID 78
+BMI <= 30.15
+" -> "ID 79
+DiabetesPedigreeFunction <= 0.637
+" [label=True]
+	"ID 78
+BMI <= 30.15
+" -> "ID 98
+BloodPressure <= 61.0
+" [label=False]
+	"ID 121
+Age <= 66.5
+" -> "ID 122
+BloodPressure <= 71.0
+" [label=True]
+	"ID 121
+Age <= 66.5
+" -> "ID 133,
+Classification -> 0.0
+" [label=False]
+	"ID 4
+DiabetesPedigreeFunction <= 0.672
+" -> "ID 5,
+Classification -> 0.0
+" [label=True]
+	"ID 4
+DiabetesPedigreeFunction <= 0.672
+" -> "ID 6
+BMI <= 23.549999999999997
+" [label=False]
+	"ID 9
+DiabetesPedigreeFunction <= 0.9555
+" -> "ID 10
+BMI <= 45.45
+" [label=True]
+	"ID 9
+DiabetesPedigreeFunction <= 0.9555
+" -> "ID 33,
+Classification -> 1.0
+" [label=False]
+	"ID 35
+BMI <= 9.65
+" -> "ID 36,
+Classification -> 1.0
+" [label=True]
+	"ID 35
+BMI <= 9.65
+" -> "ID 37,
+Classification -> 0.0
+" [label=False]
+	"ID 38
+Glucose <= 103.5
+" -> "ID 39
+DiabetesPedigreeFunction <= 0.796
+" [label=True]
+	"ID 38
+Glucose <= 103.5
+" -> "ID 58
+DiabetesPedigreeFunction <= 0.1105
+" [label=False]
+	"ID 79
+DiabetesPedigreeFunction <= 0.637
+" -> "ID 80
+BMI <= 23.75
+" [label=True]
+	"ID 79
+DiabetesPedigreeFunction <= 0.637
+" -> "ID 97,
+Classification -> 0.0
+" [label=False]
+	"ID 98
+BloodPressure <= 61.0
+" -> "ID 99,
+Classification -> 1.0
+" [label=True]
+	"ID 98
+BloodPressure <= 61.0
+" -> "ID 100
+Age <= 41.5
+" [label=False]
+	"ID 122
+BloodPressure <= 71.0
+" -> "ID 123
+DiabetesPedigreeFunction <= 2.111
+" [label=True]
+	"ID 122
+BloodPressure <= 71.0
+" -> "ID 132,
+Classification -> 1.0
+" [label=False]
+	"ID 6
+BMI <= 23.549999999999997
+" -> "ID 7,
+Classification -> 1.0
+" [label=True]
+	"ID 6
+BMI <= 23.549999999999997
+" -> "ID 8,
+Classification -> 0.0
+" [label=False]
+	"ID 10
+BMI <= 45.45
+" -> "ID 11
+Insulin <= 42.0
+" [label=True]
+	"ID 10
+BMI <= 45.45
+" -> "ID 30
+Glucose <= 121.0
+" [label=False]
+	"ID 39
+DiabetesPedigreeFunction <= 0.796
+" -> "ID 40
+Pregnancies <= 11.5
+" [label=True]
+	"ID 39
+DiabetesPedigreeFunction <= 0.796
+" -> "ID 53
+Pregnancies <= 7.5
+" [label=False]
+	"ID 58
+DiabetesPedigreeFunction <= 0.1105
+" -> "ID 59,
+Classification -> 0.0
+" [label=True]
+	"ID 58
+DiabetesPedigreeFunction <= 0.1105
+" -> "ID 60
+SkinThickness <= 41.5
+" [label=False]
+	"ID 80
+BMI <= 23.75
+" -> "ID 81,
+Classification -> 0.0
+" [label=True]
+	"ID 80
+BMI <= 23.75
+" -> "ID 82
+DiabetesPedigreeFunction <= 0.2145
+" [label=False]
+	"ID 100
+Age <= 41.5
+" -> "ID 101
+BloodPressure <= 91.0
+" [label=True]
+	"ID 100
+Age <= 41.5
+" -> "ID 112
+Pregnancies <= 6.5
+" [label=False]
+	"ID 123
+DiabetesPedigreeFunction <= 2.111
+" -> "ID 124
+SkinThickness <= 19.5
+" [label=True]
+	"ID 123
+DiabetesPedigreeFunction <= 2.111
+" -> "ID 131,
+Classification -> 0.0
+" [label=False]
+	"ID 11
+Insulin <= 42.0
+" -> "ID 12
+Pregnancies <= 3.5
+" [label=True]
+	"ID 11
+Insulin <= 42.0
+" -> "ID 21
+DiabetesPedigreeFunction <= 0.6615
+" [label=False]
+	"ID 30
+Glucose <= 121.0
+" -> "ID 31,
+Classification -> 1.0
+" [label=True]
+	"ID 30
+Glucose <= 121.0
+" -> "ID 32,
+Classification -> 0.0
+" [label=False]
+	"ID 40
+Pregnancies <= 11.5
+" -> "ID 41
+Glucose <= 33.5
+" [label=True]
+	"ID 40
+Pregnancies <= 11.5
+" -> "ID 50
+BloodPressure <= 81.0
+" [label=False]
+	"ID 53
+Pregnancies <= 7.5
+" -> "ID 54
+Glucose <= 90.5
+" [label=True]
+	"ID 53
+Pregnancies <= 7.5
+" -> "ID 57,
+Classification -> 1.0
+" [label=False]
+	"ID 60
+SkinThickness <= 41.5
+" -> "ID 61
+Insulin <= 132.0
+" [label=True]
+	"ID 60
+SkinThickness <= 41.5
+" -> "ID 74
+DiabetesPedigreeFunction <= 1.2759999999999998
+" [label=False]
+	"ID 82
+DiabetesPedigreeFunction <= 0.2145
+" -> "ID 83
+Pregnancies <= 5.5
+" [label=True]
+	"ID 82
+DiabetesPedigreeFunction <= 0.2145
+" -> "ID 88
+BMI <= 26.0
+" [label=False]
+	"ID 101
+BloodPressure <= 91.0
+" -> "ID 102
+BloodPressure <= 84.5
+" [label=True]
+	"ID 101
+BloodPressure <= 91.0
+" -> "ID 111,
+Classification -> 1.0
+" [label=False]
+	"ID 112
+Pregnancies <= 6.5
+" -> "ID 113
+Age <= 51.0
+" [label=True]
+	"ID 112
+Pregnancies <= 6.5
+" -> "ID 120,
+Classification -> 1.0
+" [label=False]
+	"ID 124
+SkinThickness <= 19.5
+" -> "ID 125
+Pregnancies <= 8.0
+" [label=True]
+	"ID 124
+SkinThickness <= 19.5
+" -> "ID 130,
+Classification -> 1.0
+" [label=False]
+	"ID 12
+Pregnancies <= 3.5
+" -> "ID 13
+BloodPressure <= 55.0
+" [label=True]
+	"ID 12
+Pregnancies <= 3.5
+" -> "ID 20,
+Classification -> 0.0
+" [label=False]
+	"ID 21
+DiabetesPedigreeFunction <= 0.6615
+" -> "ID 22,
+Classification -> 0.0
+" [label=True]
+	"ID 21
+DiabetesPedigreeFunction <= 0.6615
+" -> "ID 23
+BloodPressure <= 65.0
+" [label=False]
+	"ID 41
+Glucose <= 33.5
+" -> "ID 42,
+Classification -> 1.0
+" [label=True]
+	"ID 41
+Glucose <= 33.5
+" -> "ID 43
+Glucose <= 94.5
+" [label=False]
+	"ID 50
+BloodPressure <= 81.0
+" -> "ID 51,
+Classification -> 1.0
+" [label=True]
+	"ID 50
+BloodPressure <= 81.0
+" -> "ID 52,
+Classification -> 0.0
+" [label=False]
+	"ID 54
+Glucose <= 90.5
+" -> "ID 55,
+Classification -> 1.0
+" [label=True]
+	"ID 54
+Glucose <= 90.5
+" -> "ID 56,
+Classification -> 0.0
+" [label=False]
+	"ID 61
+Insulin <= 132.0
+" -> "ID 62
+BloodPressure <= 85.0
+" [label=True]
+	"ID 61
+Insulin <= 132.0
+" -> "ID 73,
+Classification -> 1.0
+" [label=False]
+	"ID 74
+DiabetesPedigreeFunction <= 1.2759999999999998
+" -> "ID 75,
+Classification -> 0.0
+" [label=True]
+	"ID 74
+DiabetesPedigreeFunction <= 1.2759999999999998
+" -> "ID 76,
+Classification -> 1.0
+" [label=False]
+	"ID 83
+Pregnancies <= 5.5
+" -> "ID 84,
+Classification -> 0.0
+" [label=True]
+	"ID 83
+Pregnancies <= 5.5
+" -> "ID 85
+Glucose <= 142.0
+" [label=False]
+	"ID 88
+BMI <= 26.0
+" -> "ID 89,
+Classification -> 1.0
+" [label=True]
+	"ID 88
+BMI <= 26.0
+" -> "ID 90
+Pregnancies <= 3.5
+" [label=False]
+	"ID 102
+BloodPressure <= 84.5
+" -> "ID 103
+Glucose <= 160.0
+" [label=True]
+	"ID 102
+BloodPressure <= 84.5
+" -> "ID 110,
+Classification -> 0.0
+" [label=False]
+	"ID 113
+Age <= 51.0
+" -> "ID 114
+Glucose <= 145.0
+" [label=True]
+	"ID 113
+Age <= 51.0
+" -> "ID 119,
+Classification -> 1.0
+" [label=False]
+	"ID 125
+Pregnancies <= 8.0
+" -> "ID 126
+SkinThickness <= 15.0
+" [label=True]
+	"ID 125
+Pregnancies <= 8.0
+" -> "ID 129,
+Classification -> 0.0
+" [label=False]
+	"ID 13
+BloodPressure <= 55.0
+" -> "ID 14,
+Classification -> 1.0
+" [label=True]
+	"ID 13
+BloodPressure <= 55.0
+" -> "ID 15,
+Classification -> 0.0
+" [label=False]
+	"ID 23
+BloodPressure <= 65.0
+" -> "ID 24
+Pregnancies <= 1.5
+" [label=True]
+	"ID 23
+BloodPressure <= 65.0
+" -> "ID 29,
+Classification -> 0.0
+" [label=False]
+	"ID 43
+Glucose <= 94.5
+" -> "ID 44,
+Classification -> 0.0
+" [label=True]
+	"ID 43
+Glucose <= 94.5
+" -> "ID 45
+Insulin <= 205.5
+" [label=False]
+	"ID 62
+BloodPressure <= 85.0
+" -> "ID 63
+DiabetesPedigreeFunction <= 0.394
+" [label=True]
+	"ID 62
+BloodPressure <= 85.0
+" -> "ID 70
+SkinThickness <= 15.0
+" [label=False]
+	"ID 85
+Glucose <= 142.0
+" -> "ID 86,
+Classification -> 0.0
+" [label=True]
+	"ID 85
+Glucose <= 142.0
+" -> "ID 87,
+Classification -> 1.0
+" [label=False]
+	"ID 90
+Pregnancies <= 3.5
+" -> "ID 91
+Pregnancies <= 1.5
+" [label=True]
+	"ID 90
+Pregnancies <= 3.5
+" -> "ID 96,
+Classification -> 0.0
+" [label=False]
+	"ID 103
+Glucose <= 160.0
+" -> "ID 104
+BloodPressure <= 64.5
+" [label=True]
+	"ID 103
+Glucose <= 160.0
+" -> "ID 109,
+Classification -> 1.0
+" [label=False]
+	"ID 114
+Glucose <= 145.0
+" -> "ID 115
+Pregnancies <= 4.0
+" [label=True]
+	"ID 114
+Glucose <= 145.0
+" -> "ID 118,
+Classification -> 0.0
+" [label=False]
+	"ID 126
+SkinThickness <= 15.0
+" -> "ID 127,
+Classification -> 1.0
+" [label=True]
+	"ID 126
+SkinThickness <= 15.0
+" -> "ID 128,
+Classification -> 0.0
+" [label=False]
+	"ID 24
+Pregnancies <= 1.5
+" -> "ID 25
+DiabetesPedigreeFunction <= 0.741
+" [label=True]
+	"ID 24
+Pregnancies <= 1.5
+" -> "ID 28,
+Classification -> 1.0
+" [label=False]
+	"ID 45
+Insulin <= 205.5
+" -> "ID 46,
+Classification -> 0.0
+" [label=True]
+	"ID 45
+Insulin <= 205.5
+" -> "ID 49,
+Classification -> 1.0
+" [label=False]
+	"ID 63
+DiabetesPedigreeFunction <= 0.394
+" -> "ID 64
+Age <= 56.0
+" [label=True]
+	"ID 63
+DiabetesPedigreeFunction <= 0.394
+" -> "ID 67
+Pregnancies <= 5.5
+" [label=False]
+	"ID 70
+SkinThickness <= 15.0
+" -> "ID 71,
+Classification -> 0.0
+" [label=True]
+	"ID 70
+SkinThickness <= 15.0
+" -> "ID 72,
+Classification -> 1.0
+" [label=False]
+	"ID 91
+Pregnancies <= 1.5
+" -> "ID 92
+Glucose <= 147.5
+" [label=True]
+	"ID 91
+Pregnancies <= 1.5
+" -> "ID 95,
+Classification -> 1.0
+" [label=False]
+	"ID 104
+BloodPressure <= 64.5
+" -> "ID 105,
+Classification -> 0.0
+" [label=True]
+	"ID 104
+BloodPressure <= 64.5
+" -> "ID 106
+BloodPressure <= 73.0
+" [label=False]
+	"ID 115
+Pregnancies <= 4.0
+" -> "ID 116,
+Classification -> 1.0
+" [label=True]
+	"ID 115
+Pregnancies <= 4.0
+" -> "ID 117,
+Classification -> 0.0
+" [label=False]
+	"ID 25
+DiabetesPedigreeFunction <= 0.741
+" -> "ID 26,
+Classification -> 0.0
+" [label=True]
+	"ID 25
+DiabetesPedigreeFunction <= 0.741
+" -> "ID 27,
+Classification -> 1.0
+" [label=False]
+	"ID 64
+Age <= 56.0
+" -> "ID 65,
+Classification -> 1.0
+" [label=True]
+	"ID 64
+Age <= 56.0
+" -> "ID 66,
+Classification -> 0.0
+" [label=False]
+	"ID 67
+Pregnancies <= 5.5
+" -> "ID 68,
+Classification -> 0.0
+" [label=True]
+	"ID 67
+Pregnancies <= 5.5
+" -> "ID 69,
+Classification -> 1.0
+" [label=False]
+	"ID 92
+Glucose <= 147.5
+" -> "ID 93,
+Classification -> 0.0
+" [label=True]
+	"ID 92
+Glucose <= 147.5
+" -> "ID 94,
+Classification -> 1.0
+" [label=False]
+	"ID 106
+BloodPressure <= 73.0
+" -> "ID 107,
+Classification -> 1.0
+" [label=True]
+	"ID 106
+BloodPressure <= 73.0
+" -> "ID 108,
+Classification -> 0.0
+" [label=False]
+}
