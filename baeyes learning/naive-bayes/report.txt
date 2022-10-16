@@ -1,0 +1,99 @@
+Report
+
+
+
+
+Machine Learning Assignment 1 (Question 2)
+
+
+
+
+
+
+
+
+
+
+Group 69
+
+
+Name: Sanyukta Deogade
+Roll number: 19CS30016
+
+
+Name: Ashwamegh Rathore
+Roll number: 19CS30009 
+
+
+
+
+
+
+
+
+
+
+  Results
+
+************** DATASET DESCRIPTION BEFORE REMOVAL OF OUTLIERS **************
+     Pregnancies  Glucose  ...  Age  Outcome
+0              6      148  ...   50        1
+1              1       85  ...   31        0
+2              8      183  ...   32        1
+3              1       89  ...   21        0
+4              0      137  ...   33        1
+..           ...      ...  ...  ...      ...
+763           10      101  ...   63        0
+764            2      122  ...   27        0
+765            5      121  ...   30        0
+766            1      126  ...   47        1
+767            1       93  ...   23        0
+
+[768 rows x 9 columns]
+*****************************************************************************
+
+************** DATASET DESCRIPTION AFTER REMOVAL OF OUTLIERS & NORMALIZATION **************
+     Pregnancies   Glucose  ...       Age  y
+0       0.635778  0.851391  ...  1.436006  1
+1      -0.844828 -1.125780  ... -0.194476  0
+2       1.228021  1.949820  ... -0.108661  1
+3      -0.844828 -1.000246  ... -1.052624  0
+4      -1.140950  0.506171  ... -0.022846  1
+..           ...       ...  ...       ... ..
+763     1.820264 -0.623641  ...  2.551598  0
+764    -0.548707  0.035416  ... -0.537735  0
+765     0.339657  0.004032  ... -0.280290  0
+766    -0.844828  0.160950  ...  1.178561  1
+767    -0.844828 -0.874711  ... -0.880994  0
+
+[755 rows x 9 columns]
+*********************************************************************************************
+
+****************** RESULTS OF 10-FOLD CROSS VALIDATION *****************
+Scores: 
+Accuracy: [70.0, 78.33333333333333, 71.66666666666667, 78.33333333333333, 78.33333333333333, 71.66666666666667, 78.33333333333333, 73.33333333333333, 85.0, 76.66666666666667]
+Precision: [60.0, 75.0, 65.21739130434783, 73.91304347826086, 62.5, 65.0, 43.75, 56.25, 80.95238095238095, 77.27272727272727]
+Recall: [42.857142857142854, 65.21739130434783, 62.5, 70.83333333333334, 58.82352941176471, 56.52173913043478, 63.63636363636363, 50.0, 77.27272727272727, 65.38461538461539]
+Mean Accuracy: 76.167%
+Mean Precision: 65.986%
+Mean Recall: 61.305%
+**********************************************************************
+
+
+Final Test Accuracy : 71.523%
+Final Test Precision : 52.830%%
+Final Test Recall : 60.870%
+
+
+
+
+-------------------- Please Note ----------------------
+You can find the resultant dataset after outlier-removal and normalization in 'normalized_dataset.csv'
+The problem statement asks to encode categorical variables using appropriate encoding method.
+However, the dataset has no categorical features and only numerical continuous data.
+
+Due to continuos nature of dataset features we used Gaussian probability model to calculate likelihoods. 
+Moreover, the laplace correction/smoothing , which is used for handling zero probability conditions in discrete categorical feature set, 
+would be irrelevant in case of normalized continuous featureset as probability calculated through Gaussian distribution, 
+as small as it may be, will never be zero. 
+--------------------------------------------------------

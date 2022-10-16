@@ -1,0 +1,241 @@
+﻿Report
+
+
+
+
+ Machine Learning Assignment 1 (Part a)
+
+
+
+
+
+
+
+
+
+
+Group 69
+
+
+Name: Sanyukta Deogade
+Roll number: 19CS30016
+
+
+Name: Ashwamegh Rathore
+Roll number: 19CS30009 
+
+
+
+
+
+
+
+
+
+
+  Results
+
+
+
+
+
+
+-----------------------TREE with Entropy------------------------------
+Training complete
+              precision    recall  f1-score   support
+
+
+           0       0.95      0.98      0.97       400
+           1       0.96      0.91      0.93       214
+
+
+    accuracy                           0.95       614
+   macro avg       0.95      0.94      0.95       614
+weighted avg       0.95      0.95      0.95       614
+
+
+Training accuracy: 0.9543973941368078
+              precision    recall  f1-score   support
+
+
+           0       0.72      0.80      0.76       100
+           1       0.53      0.43      0.47        54
+
+
+    accuracy                           0.67       154
+   macro avg       0.63      0.61      0.62       154
+weighted avg       0.66      0.67      0.66       154
+
+
+Testing accuracy: 0.6688311688311688
+Time taken: 2.267167806625366
+
+
+--------------- TREE over 10 random splits ENTROPY----------
+
+
+Training on split 1 complete
+Training accuracy: 0.9565217391304348
+Testing accuracy: 0.7402597402597403
+Training on split 2 complete
+Training accuracy: 0.9347826086956522
+Testing accuracy: 0.6753246753246753
+Training on split 3 complete
+Training accuracy: 0.9760869565217392
+Testing accuracy: 0.6818181818181818
+Training on split 4 complete
+Training accuracy: 0.9739130434782609
+Testing accuracy: 0.7207792207792207
+Training on split 5 complete
+Training accuracy: 0.9543478260869566
+Testing accuracy: 0.7532467532467533
+Training on split 6 complete
+Training accuracy: 0.9608695652173913
+Testing accuracy: 0.6818181818181818
+Training on split 7 complete
+Training accuracy: 0.9760869565217392
+Testing accuracy: 0.6753246753246753
+Training on split 8 complete
+Training accuracy: 0.941304347826087
+Testing accuracy: 0.7532467532467533
+Training on split 9 complete
+Training accuracy: 0.9891304347826086
+Testing accuracy: 0.7272727272727273
+Training on split 10 complete
+Training accuracy: 0.9608695652173913
+Testing accuracy: 0.7012987012987013
+
+
+
+
+
+
+Average train accuracy over 10 test train splits is 0.962391304347826
+Average test accuracy over 10 test train splits is 0.711038961038961
+
+
+----------------BEST TREE OVER 10 RANDOM SPLITS ENTROPY-------------
+              precision    recall  f1-score   support
+
+
+           0       0.95      0.98      0.97       299
+           1       0.96      0.91      0.93       161
+
+
+    accuracy                           0.95       460
+   macro avg       0.96      0.94      0.95       460
+weighted avg       0.95      0.95      0.95       460
+
+
+Training accuracy: 0.9543478260869566
+              precision    recall  f1-score   support
+
+
+           0       0.82      0.80      0.81       100
+           1       0.64      0.67      0.65        54
+
+
+    accuracy                           0.75       154
+   macro avg       0.73      0.73      0.73       154
+weighted avg       0.76      0.75      0.75       154
+
+
+Testing accuracy: 0.7532467532467533
+
+
+
+
+Optimal depth: 3
+
+
+
+
+-----------------------PRUNING OPERATIONS-------------------
+X_train: (460, 8)
+X_test: (154, 8)
+X_val: (154, 8)
+y_train: (460,)
+y_test: (154,)
+y_val: (154,)
+Unpruned best tree accuracies:
+              precision    recall  f1-score   support
+
+
+           0       0.95      0.98      0.97       299
+           1       0.96      0.91      0.93       161
+
+
+    accuracy                           0.95       460
+   macro avg       0.96      0.94      0.95       460
+weighted avg       0.95      0.95      0.95       460
+
+
+Training accuracy: 0.9543478260869566
+              precision    recall  f1-score   support
+
+
+           0       0.82      0.80      0.81       100
+           1       0.64      0.67      0.65        54
+
+
+    accuracy                           0.75       154
+   macro avg       0.73      0.73      0.73       154
+weighted avg       0.76      0.75      0.75       154
+
+
+Testing accuracy: 0.7532467532467533
+              precision    recall  f1-score   support
+
+
+           0       0.79      0.82      0.81       101
+           1       0.63      0.58      0.61        53
+
+
+    accuracy                           0.74       154
+   macro avg       0.71      0.70      0.71       154
+weighted avg       0.74      0.74      0.74       154
+
+
+Validation accuracy: 0.7402597402597403
+
+
+---------------------------Post Pruning complete------------------------
+              precision    recall  f1-score   support
+
+
+           0       0.79      0.89      0.84       299
+           1       0.74      0.57      0.64       161
+
+
+    accuracy                           0.78       460
+   macro avg       0.77      0.73      0.74       460
+weighted avg       0.77      0.78      0.77       460
+
+
+Training accuracy: 0.7782608695652173
+              precision    recall  f1-score   support
+
+
+           0       0.79      0.85      0.82       100
+           1       0.68      0.59      0.63        54
+
+
+    accuracy                           0.76       154
+   macro avg       0.74      0.72      0.73       154
+weighted avg       0.75      0.76      0.76       154
+
+
+Testing accuracy: 0.7597402597402597
+              precision    recall  f1-score   support
+
+
+           0       0.82      0.88      0.85       101
+           1       0.73      0.62      0.67        53
+
+
+    accuracy                           0.79       154
+   macro avg       0.77      0.75      0.76       154
+weighted avg       0.79      0.79      0.79       154
+
+
+Validation accuracy: 0.7922077922077922
